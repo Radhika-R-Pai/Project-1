@@ -1,0 +1,179 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu item styling */
+.menu-item {
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.menu-item .description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 1.2em;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Hover effects for menu items */
+.menu-item:hover {
+    background-color: greenyellow;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    background-color: green;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Media Queries */
+
+/* For devices with max width of 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .menu-item {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .menu-item h3 {
+        font-size: 1.6em;
+    }
+
+    .menu-item .description {
+        font-size: 0.9em;
+    }
+
+    .menu-item .price {
+        font-size: 1.1em;
+    }
+}
+
+/* For mobile screens with max width of 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+    }
+
+    .menu-item h3 {
+        font-size: 1.4em;
+    }
+
+    .menu-item .description {
+        font-size: 0.85em;
+    }
+
+    .menu-item .price {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
